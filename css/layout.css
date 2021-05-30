@@ -118,6 +118,25 @@
   justify-content: center;
   margin: 0 auto !important; }
 
+.menu .checkbox-outer {
+  margin: 0 !important;
+  padding: 0;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: flex-end; }
+
+.menu .checkbox-wrapper {
+  margin-bottom: 1rem; }
+
+.menu .checkbox-wrapper > input {
+  width: 1.1rem;
+  height: 1.1rem; }
+
+.menu .checkbox-wrapper > label {
+  font-size: 1.25rem;
+  position: relative;
+  bottom: 0.15rem; }
+
 .menu .play {
   cursor: pointer;
   background-color: #1c50b9;
@@ -138,7 +157,8 @@
   padding-top: 0;
   padding-left: 1.75rem;
   margin-left: 0 !important;
-  margin-right: 0 !important; }
+  margin-right: 0 !important;
+  margin-top: 0 !important; }
 
 .menu .rules .title {
   font-weight: bold;

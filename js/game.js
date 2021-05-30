@@ -30,8 +30,6 @@ function Game() {
     }
   }
 
-  window.addEventListener("deviceorientation", handleOrientation);
-
   obj.CARS = Array(40)
     .fill(null)
     .map((_, index) => "car-" + (index + 2));
@@ -61,6 +59,11 @@ function Game() {
 
     this.bulletCount = 3;
     this.CarList = [];
+    if (document.getElementById("button-mode").checked) {
+      window.removeEventListener("deviceorientation", handleOrientation);
+    } else {
+      window.addEventListener("deviceorientation", handleOrientation);
+    }
   }
 
   document.getElementById("left-btn").addEventListener(

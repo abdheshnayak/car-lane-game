@@ -134,6 +134,27 @@
     justify-content: center;
     margin: 0 auto !important;
   }
+
+  .checkbox-outer {
+    margin: 0 !important;
+    padding: 0;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .checkbox-wrapper {
+    margin-bottom: 1rem;
+    & > input {
+      width: 1.1rem;
+      height: 1.1rem;
+    }
+    & > label {
+      font-size: 1.25rem;
+      position: relative;
+      bottom: 0.15rem;
+    }
+  }
   .play {
     cursor: pointer;
     background-color: rgb(28, 80, 185);
@@ -155,6 +176,7 @@
     padding-left: 1.75rem;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    margin-top: 0 !important;
     .title {
       font-weight: bold;
       font-size: 1.1rem;
