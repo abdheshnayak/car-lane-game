@@ -20,11 +20,11 @@ function Game() {
     if (obj.mainCar.car.classList.contains("crash")) return;
 
     if (x < -10) {
-      obj.mainCar.moveXaxis(obj.mainCar, 1);
+      moveXaxis(obj.mainCar, 1);
     } else if (x > 10) {
-      obj.mainCar.moveXaxis(obj.mainCar, 3);
+      moveXaxis(obj.mainCar, 3);
     } else if (x > -7 && x < 7) {
-      obj.mainCar.moveXaxis(obj.mainCar, 2);
+      moveXaxis(obj.mainCar, 2);
     }
   }
 
@@ -65,7 +65,8 @@ function Game() {
     "click",
     (e) => {
       if (this.mainCar.car.classList.contains("crash")) return;
-      this.mainCar.moveYaxis(obj.mainCar, -1);
+
+      moveYaxis(obj.mainCar, -1);
     },
     obj
   );
@@ -73,7 +74,7 @@ function Game() {
     "click",
     (e) => {
       if (this.mainCar.car.classList.contains("crash")) return;
-      this.mainCar.moveYaxis(obj.mainCar, 1);
+      moveYaxis(obj.mainCar, 1);
     },
     obj
   );
@@ -82,9 +83,9 @@ function Game() {
     if (obj.mainCar.car.classList.contains("crash")) return;
 
     if (e.key == "a") {
-      obj.mainCar.moveYaxis(obj.mainCar, -1);
+      moveYaxis(obj.mainCar, -1);
     } else if (e.key == "d") {
-      obj.mainCar.moveYaxis(obj.mainCar, 1);
+      moveYaxis(obj.mainCar, 1);
     } else if (e.key == "u") {
       if (this.bullet || this.bulletCount <= 0) {
         return;
@@ -119,7 +120,7 @@ function Game() {
     for (var i = 0; i < obj.CarList.length; i++) {
       let car = obj.CarList[i];
 
-      if (!car.checkYCollison(obj.CarList, -5, 0.25)) {
+      if (!checkYCollison(obj.CarList, -5, 0.25)) {
         obj.CarList.push(
           new Car(
             Math.floor(Math.random() * 3),
@@ -176,7 +177,7 @@ function Game() {
         sp = 1.5;
       }
       car.run(car, sp, obj.CarList);
-      if (car.findCollison(car, obj.mainCar)) {
+      if (findCollison(car, obj.mainCar)) {
         // console.log(car, obj.mainCar);
         stop = true;
 

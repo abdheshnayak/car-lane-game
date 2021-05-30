@@ -1,5 +1,4 @@
 var gameObj = new Game();
-// this.gameObj.startAnimating(50);
 
 this.gameObj.startAnimating(50);
 
