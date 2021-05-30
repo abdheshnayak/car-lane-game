@@ -176,3 +176,21 @@
 .hide {
   display: none !important;
 }
+
+.assets-downloader {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(./imgs/cars2.png);
+  &:after {
+    content: "";
+    background-image: url(../images/fire.png);
+  }
+  &:before {
+    content: "";
+    background-image: url(./imgs/bullet.png);
+  }
+}

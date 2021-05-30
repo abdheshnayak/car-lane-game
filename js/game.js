@@ -1,4 +1,6 @@
 function Game() {
+  const roadAnimator = document.getElementById("road-animator");
+
   var obj = this;
 
   obj.startAnimating = startAnimating;
@@ -48,7 +50,7 @@ function Game() {
 
     this.mainCar = new Car(2, 75, "car-4", this);
 
-    this.mainCar.car.addEventListener("click", (e) => {
+    document.getElementById("background").addEventListener("click", (e) => {
       if (this.bullet || this.bulletCount <= 0) {
         return;
       }
@@ -100,8 +102,6 @@ function Game() {
   var fps, fpsInterval, startTime, now, then, elapsed;
 
   // initialize the timer variables and start the animation
-
-  const roadAnimator = document.getElementById("road-animator");
 
   function putCar() {
     if (obj.CarList.length <= 0) {
