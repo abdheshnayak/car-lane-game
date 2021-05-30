@@ -1,0 +1,241 @@
+.car {
+  display: inline-block;
+  background-color: grey;
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(-90deg);
+
+  &.crash {
+    filter: invert(1);
+    &:before {
+      filter: invert(1);
+      background-image: url(../images/fire.png);
+      background-size: 100%;
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &.bullet {
+    background: url("imgs/bullet.png") no-repeat 65.517% 63.522%;
+    width: 65px;
+    height: 23px;
+  }
+
+  &.car-1 {
+    background: url("./imgs/cars2.png") no-repeat 0 0.319%;
+    width: 99px;
+    height: 42px;
+  }
+  &.car-2 {
+    background: url("imgs/cars2.png") no-repeat 20.118% 0;
+    width: 93px;
+    height: 41px;
+  }
+  &.car-3 {
+    background: url("imgs/cars2.png") no-repeat 39.721% 0;
+    width: 99px;
+    height: 42px;
+  }
+  &.car-4 {
+    background: url("imgs/cars2.png") no-repeat 58.891% 0.316%;
+    width: 77px;
+    height: 39px;
+    transition: left 0.1s linear;
+  }
+  &.car-5 {
+    background: url("imgs/cars2.png") no-repeat 78.203% 0.316%;
+    width: 77px;
+    height: 39px;
+  }
+
+  &.car-6 {
+    background: url("imgs/cars2.png") no-repeat 97.132% 0.316%;
+    width: 77px;
+    height: 39px;
+  }
+
+  &.car-7 {
+    background: url("imgs/cars2.png") no-repeat 21.105% 14.921%;
+    width: 93px;
+    height: 40px;
+  }
+
+  &.car-8 {
+    background: url("imgs/cars2.png") no-repeat 39.847% 15.19%;
+    width: 78px;
+    height: 39px;
+  }
+
+  &.car-9 {
+    background: url("imgs/cars2.png") no-repeat 59.756% 14.516%;
+    width: 108px;
+    height: 45px;
+  }
+
+  &.car-10 {
+    background: url("imgs/cars2.png") no-repeat 81.4% 14.696%;
+    width: 100px;
+    height: 42px;
+  }
+
+  &.car-11 {
+    background: url("imgs/cars2.png") no-repeat 98.853% 15.506%;
+    width: 77px;
+    height: 39px;
+  }
+
+  &.car-12 {
+    background: url("imgs/cars2.png") no-repeat 0.973% 28.981%;
+    width: 86px;
+    height: 41px;
+  }
+
+  &.car-13 {
+    background: url("imgs/cars2.png") no-repeat 18.264% 30.24%;
+    width: 47px;
+    height: 21px;
+  }
+  &.car-14 {
+    background: url("imgs/cars2.png") no-repeat 28.872% 29.114%;
+    width: 77px;
+    height: 39px;
+  }
+  &.car-15 {
+    background: url("imgs/cars2.png") no-repeat 44.551% 29.114%;
+    width: 77px;
+    height: 39px;
+  }
+  &.car-16 {
+    background: url("imgs/cars2.png") no-repeat 61.417% 29.114%;
+    width: 92px;
+    height: 39px;
+  }
+  &.car-17 {
+    background: url("imgs/cars2.png") no-repeat 77.148% 99.045%;
+    width: 88px;
+    height: 41px;
+  }
+
+  &.car-18 {
+    background: url("imgs/cars2.png") no-repeat 98.839% 29.874%;
+    width: 83px;
+    height: 37px;
+  }
+  &.car-19 {
+    background: url("imgs/cars2.png") no-repeat 0 42.138%;
+    width: 93px;
+    height: 37px;
+  }
+  &.car-20 {
+    background: url("imgs/cars2.png") no-repeat 20.445% 42.581%;
+    width: 106px;
+    height: 45px;
+  }
+  &.car-21 {
+    background: url("imgs/cars2.png") no-repeat 42.126% 42.54%;
+    width: 92px;
+    height: 40px;
+  }
+  &.car-22 {
+    background: url("imgs/cars2.png") no-repeat 61.811% 42.54%;
+    width: 92px;
+    height: 40px;
+  }
+  &.car-23 {
+    background: url("imgs/cars2.png") no-repeat 99.044% 43.671%;
+    width: 77px;
+    height: 39px;
+  }
+  &.car-24 {
+    background: url("imgs/cars2.png") no-repeat 41.109% 56.646%;
+    width: 77px;
+    height: 39px;
+  }
+  &.car-25 {
+    background: url("imgs/cars2.png") no-repeat 59.88% 56.869%;
+    width: 99px;
+    height: 42px;
+  }
+  &.car-26 {
+    background: url("imgs/cars2.png") no-repeat 80.868% 57.143%;
+    width: 93px;
+    height: 40px;
+  }
+  &.car-27 {
+    background: url("imgs/cars2.png") no-repeat 99.409% 57.233%;
+    width: 92px;
+    height: 37px;
+  }
+  &.car-28 {
+    background: url("imgs/cars2.png") no-repeat 0.778% 69.649%;
+    width: 86px;
+    height: 42px;
+  }
+  &.car-29 {
+    background: url("imgs/cars2.png") no-repeat 20.669% 69.497%;
+    width: 92px;
+    height: 37px;
+  }
+  &.car-30 {
+    background: url("imgs/cars2.png") no-repeat 40.481% 70.607%;
+    width: 101px;
+    height: 42px;
+  }
+  &.car-31 {
+    background: url("imgs/cars2.png") no-repeat 62.551% 71.613%;
+    width: 106px;
+    height: 45px;
+  }
+  &.car-32 {
+    background: url("imgs/cars2.png") no-repeat 82.677% 70.938%;
+    width: 92px;
+    height: 35px;
+  }
+  &.car-33 {
+    background: url("imgs/cars2.png") no-repeat 82.677% 70.938%;
+    width: 92px;
+    height: 35px;
+  }
+  &.car-34 {
+    background: url("imgs/cars2.png") no-repeat 99.042% 70.347%;
+    width: 78px;
+    height: 38px;
+  }
+  &.car-35 {
+    background: url("imgs/cars2.png") no-repeat 0.399% 84.026%;
+    width: 99px;
+    height: 42px;
+  }
+  &.car-36 {
+    background: url("imgs/cars2.png") no-repeat 20.916% 84.345%;
+    width: 98px;
+    height: 42px;
+  }
+  &.car-37 {
+    background: url("imgs/cars2.png") no-repeat 40.945% 84.713%;
+    width: 92px;
+    height: 41px;
+  }
+  &.car-38 {
+    background: url("imgs/cars2.png") no-repeat 60.355% 85.127%;
+    width: 93px;
+    height: 39px;
+  }
+  &.car-39 {
+    background: url("imgs/cars2.png") no-repeat 78.295% 85.174%;
+    width: 84px;
+    height: 38px;
+  }
+
+  &.car-40 {
+    background: url("imgs/cars2.png") no-repeat 0.586% 97.452%;
+    width: 88px;
+    height: 41px;
+  }
+  &.car-41 {
+    background: url("imgs/cars2.png") no-repeat 58.974% 98.113%;
+    width: 93px;
+    height: 37px;
+  }
+}

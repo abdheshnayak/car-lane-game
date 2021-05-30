@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://proicons.netlify.app/css/icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/car.css" />
+  </head>
+  <body>
+    <div class="menu" id="menu-splash">
+      <div class="menu-wrapper">
+        <span class="your-score">
+          Your Score:
+          <span id="score-2">0</span>
+        </span>
+        <div class="rules">
+          <span class="title">Rules:</span>
+          <ol class="rules-body">
+            <li>
+              Press "D" on keybard or click D button on screen to move car
+              right.
+            </li>
+            <li>
+              Press "A" on keybard or click A button on screen to move car left.
+            </li>
+            <li>Press "U" on keyboard or click on car to release bullet.</li>
+            <li>
+              Speed of car will be increase time to time so be concentrate.
+            </li>
+            <li>Easy GAME Easy Rule :) that's it..😊😊😊</li>
+          </ol>
+        </div>
+        <div class="btn-wrapper">
+          <div class="play" id="play">
+            <i class="far fa-play-circle"></i> Play
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="background">
+      <div class="score-board">
+        <div class="score-board-inner">
+          <b>Score : <span id="score">0</span></b>
+          <b>Time: <b id="time">0</b> Sec</b>
+          <b
+            ><i class="fas fa-rocket-launch"></i> :
+            <b id="bullet-count">0</b></b
+          >
+          <b>HI: <b id="high-score">0</b></b>
+        </div>
+      </div>
+      <div class="road-outer">
+        <div class="road" id="road-animator">
+          <div class="car-wrapper" id="road"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="left-right">
+        <div>
+          <div class="left" id="left-btn">
+            <i class="fad fa-angle-double-left"></i>
+            A
+          </div>
+          <div class="right" id="right-btn">
+            D
+            <i class="fad fa-angle-double-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/car.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

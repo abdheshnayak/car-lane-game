@@ -1,0 +1,178 @@
+@keyframes road-move {
+  0% {
+    background-position-y: 0%;
+  }
+  100% {
+    background-position-y: 100%;
+  }
+}
+
+@keyframes town-move {
+  0% {
+    background-position-y: 0%;
+  }
+  100% {
+    background-position-y: 30rem;
+  }
+}
+
+.road-outer {
+  height: calc(100% - 2rem);
+}
+.road {
+  position: relative;
+
+  margin: 0 auto;
+  width: 80%;
+  max-width: 25rem;
+  height: 100%;
+  background-image: url(../images/road.png);
+  background-size: 100% 50%;
+  //   background-repeat: no-repeat;
+  background-repeat: repeat-y;
+  &.animate {
+    animation: road-move 1s linear infinite;
+  }
+}
+
+.car-wrapper {
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+
+  //   background-color: red;
+  margin: 0 auto;
+  position: relative;
+}
+.container {
+  background-size: 50%;
+  background: url(../images/download.png);
+  background-size: 30rem;
+  &.animate {
+    animation: town-move 2s linear infinite;
+  }
+}
+.score-board {
+  height: 2rem;
+  width: 100%;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & > .score-board-inner {
+    min-width: 320px;
+    // max-width: 20rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+}
+
+.left-right {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.75);
+  // height: 100%;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+    & > div {
+      cursor: pointer;
+      padding: 1rem;
+      width: 40%;
+      user-select: none;
+
+      &:nth-child(2) {
+        text-align: right;
+      }
+
+      &:hover {
+        background-color: rgba($color: #000000, $alpha: 0.5);
+      }
+      &:active {
+        background-color: rgba($color: #000000, $alpha: 0.75);
+      }
+    }
+  }
+}
+
+.menu {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  min-width: 20rem;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3x 6px grey;
+  & > .menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & > div {
+      margin: 2rem;
+    }
+  }
+  .your-score {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto !important;
+  }
+  .play {
+    cursor: pointer;
+    background-color: rgb(28, 80, 185);
+    color: white;
+    justify-content: center;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    min-width: 6rem;
+    &:hover {
+      background-color: rgb(4, 58, 166);
+    }
+  }
+  .rules {
+    background-color: #eee;
+    padding: 0.5rem;
+    padding-top: 0;
+    padding-left: 1.75rem;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    .title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      display: inline-block;
+      color: rgb(28, 80, 185);
+      padding: 0.5rem;
+      padding-left: 0;
+    }
+    .rules-body {
+      font-size: 0.85rem;
+      line-height: 1.2rem;
+      color: black;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+  }
+}
+
+.hide {
+  display: none !important;
+}
