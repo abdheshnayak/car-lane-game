@@ -78,8 +78,11 @@ const moveToUp = (car, carList, smooth) => {
     var score = document.getElementById("score");
     score.innerText = Number(score.innerText) + 1;
 
-    if (Number(localStorage.getItem("high-score")) < Number(score.innerText)) {
-      localStorage.setItem("high-score", score.innerText);
+    if (
+      Number(localStorage.getItem("high-score-car-lane-game")) <
+      Number(score.innerText)
+    ) {
+      localStorage.setItem("high-score-car-lane-game", score.innerText);
     }
     document.getElementById("score-2").innerText = score.innerText;
 

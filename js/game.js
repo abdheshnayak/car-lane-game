@@ -145,7 +145,7 @@ function Game() {
     // Update the state of the world for the elapsed time since last render
 
     document.getElementById("high-score").innerHTML =
-      localStorage.getItem("high-score") || 0;
+      localStorage.getItem("high-score-car-lane-game") || 0;
 
     document.getElementById("bullet-count").innerText = obj.bulletCount;
 
